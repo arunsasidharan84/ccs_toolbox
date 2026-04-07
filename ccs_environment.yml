@@ -1,0 +1,18 @@
+name: ccs
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - spyder-kernels=3.0
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - tk=8.6.13
+  - mne=1.6.0
+  - mne-connectivity
+  - yasa
+  - pyedflib
+  - pip

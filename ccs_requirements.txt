@@ -1,0 +1,2 @@
+# ... other pip packages
+bleak==0.21.1

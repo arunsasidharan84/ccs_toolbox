@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ccstools"
+version = "0.1.0"
+authors = [
+  { name="Arun Sasidharan", email="arunsasidharan@nimhans.ac.in" },
+]
+description = "A toolbox for EEG analysis at CCS, NIMHANS."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+    "mne>=1.6.0",
+    "mne-connectivity",
+    "yasa",
+    "antropy",
+    "fooof",
+    "lspopt",
+    "networkx",
+    "bctpy",
+    "statsmodels",
+    "pycatch22",
+    "bleak",
+    "tqdm",
+    "mne-icalabel",
+    "autoreject",
+    "pyedflib",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/arunsasidharan84/ccs_toolbox"
+"Bug Tracker" = "https://github.com/arunsasidharan84/ccs_toolbox/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ccstools*"]
